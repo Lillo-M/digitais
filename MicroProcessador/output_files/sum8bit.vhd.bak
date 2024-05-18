@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity sum8bit is
+	port(
+		A, B: in std_logic_vector (7 downto 0);
+		O: out std_logic_vector (7 downto 0);
+		CO: out std_logic
+	);
+end sum4bit;
+
+architecture gate_level of sum8bit is
+	signal CO0C1, CO1C2, CO2C3, CO3C4, CO4C5, CO5C6, CO6C7: std_logic;
+	begin
+S0:   work.sum1bit   port map(A => A(0),B =>  B(0),O => O(0) ,CO => CO0C1);
+FA1 : work.fulladder port map(A => A(1),B =>  B(1),C => CO0C1,O => O(1),CO => CO1C2);
+FA1 : work.fulladder port map(A => A(2),B =>  B(2),C => CO1C2,O => O(1),CO => CO2C3);
+FA1 : work.fulladder port map(A => A(3),B =>  B(3),C => CO2C3,O => O(1),CO => CO3C4);
+FA1 : work.fulladder port map(A => A(4),B =>  B(4),C => CO3C4,O => O(1),CO => CO4C5);
+FA1 : work.fulladder port map(A => A(5),B =>  B(5),C => CO4C5,O => O(1),CO => CO5C6);
+FA1 : work.fulladder port map(A => A(6),B =>  B(6),C => CO5C6,O => O(1),CO => CO6C7);
+FA1 : work.fulladder port map(A => A(7),B =>  B(7),C => CO6C7,O => O(1),CO => CO);
+
+end gate_level;

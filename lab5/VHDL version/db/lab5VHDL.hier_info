@@ -1,0 +1,25 @@
+|lab5VHDL
+HEX07 <= <VCC>
+HEX0[0] <= StateMachineVHDL:inst.HEX0[0]
+HEX0[1] <= StateMachineVHDL:inst.HEX0[1]
+HEX0[2] <= StateMachineVHDL:inst.HEX0[2]
+HEX0[3] <= StateMachineVHDL:inst.HEX0[3]
+HEX0[4] <= StateMachineVHDL:inst.HEX0[4]
+HEX0[5] <= StateMachineVHDL:inst.HEX0[5]
+HEX0[6] <= StateMachineVHDL:inst.HEX0[6]
+PB0 => StateMachineVHDL:inst.clk
+PB1 => StateMachineVHDL:inst.reset
+
+
+|lab5VHDL|StateMachineVHDL:inst
+clk => estado~1.DATAIN
+reset => estado~3.DATAIN
+HEX0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,306 @@
+|Lab6
+HEX0[0] <= SequenceDetector:inst.HEX0[0]
+HEX0[1] <= SequenceDetector:inst.HEX0[1]
+HEX0[2] <= SequenceDetector:inst.HEX0[2]
+HEX0[3] <= SequenceDetector:inst.HEX0[3]
+HEX0[4] <= SequenceDetector:inst.HEX0[4]
+HEX0[5] <= SequenceDetector:inst.HEX0[5]
+HEX0[6] <= SequenceDetector:inst.HEX0[6]
+CLK => Timing_Reference:inst2.clk
+PB0 => SequenceDetector:inst.LOAD
+PB1 => SequenceDetector:inst.RESET
+SW[0] => SequenceDetector:inst.SW[0]
+SW[1] => SequenceDetector:inst.SW[1]
+SW[2] => SequenceDetector:inst.SW[2]
+SW[3] => SequenceDetector:inst.SW[3]
+SW[4] => SequenceDetector:inst.SW[4]
+SW[5] => SequenceDetector:inst.SW[5]
+SW[6] => SequenceDetector:inst.SW[6]
+SW[7] => SequenceDetector:inst.SW[7]
+SW[8] => SequenceDetector:inst.SW[8]
+SW[9] => SequenceDetector:inst.SW[9]
+LED[0] <= SequenceDetector:inst.LED[0]
+LED[1] <= SequenceDetector:inst.LED[1]
+LED[2] <= SequenceDetector:inst.LED[2]
+LED[3] <= SequenceDetector:inst.LED[3]
+
+
+|Lab6|SequenceDetector:inst
+SW[0] => piso10bits:PISO.D[0]
+SW[1] => piso10bits:PISO.D[1]
+SW[2] => piso10bits:PISO.D[2]
+SW[3] => piso10bits:PISO.D[3]
+SW[4] => piso10bits:PISO.D[4]
+SW[5] => piso10bits:PISO.D[5]
+SW[6] => piso10bits:PISO.D[6]
+SW[7] => piso10bits:PISO.D[7]
+SW[8] => piso10bits:PISO.D[8]
+SW[9] => piso10bits:PISO.D[9]
+HEX0[0] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= HEX0[2].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => comb.IN1
+CLK => FINISH.CLK
+CLK => count[0].CLK
+CLK => count[1].CLK
+CLK => count[2].CLK
+CLK => count[3].CLK
+CLK => count[4].CLK
+CLK => count[5].CLK
+CLK => count[6].CLK
+CLK => count[7].CLK
+CLK => count[8].CLK
+CLK => count[9].CLK
+CLK => count[10].CLK
+CLK => count[11].CLK
+CLK => count[12].CLK
+CLK => count[13].CLK
+CLK => count[14].CLK
+CLK => count[15].CLK
+CLK => count[16].CLK
+CLK => count[17].CLK
+CLK => count[18].CLK
+CLK => count[19].CLK
+CLK => count[20].CLK
+CLK => count[21].CLK
+CLK => count[22].CLK
+CLK => count[23].CLK
+CLK => count[24].CLK
+CLK => count[25].CLK
+CLK => count[26].CLK
+CLK => count[27].CLK
+CLK => count[28].CLK
+CLK => count[29].CLK
+CLK => count[30].CLK
+CLK => count[31].CLK
+CLK => LOADED.CLK
+CLK => LED[0].DATAIN
+CLK => estado~2.DATAIN
+LOAD => process_0.IN1
+LOAD => myjkff:JKFF.CLK
+LOAD => comb.IN1
+LED[0] <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= piso10bits:PISO.SERIAL
+LED[2] <= myjkff:JKFF.Q
+LED[3] <= LOADED.DB_MAX_OUTPUT_PORT_TYPE
+RESET => TRESET.IN1
+
+
+|Lab6|SequenceDetector:inst|myJKFF:JKFF
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|SequenceDetector:inst|PISO10BITS:PISO
+LS => LSMOD.IN0
+LS => LSMOD.IN0
+LS => LSMOD.IN0
+LS => LSMOD.IN0
+LS => LSMOD.IN0
+LS => LSMOD.IN0
+LS => LSMOD.IN0
+LS => LSMOD.IN0
+LS => LSMOD.IN0
+LS => LSMOD.IN1
+LS => LSMOD.IN1
+LS => LSMOD.IN1
+LS => LSMOD.IN1
+LS => LSMOD.IN1
+LS => LSMOD.IN1
+LS => LSMOD.IN1
+LS => LSMOD.IN1
+LS => LSMOD.IN1
+D[0] => mydff:DFF0.D
+D[1] => LSMOD.IN1
+D[2] => LSMOD.IN1
+D[3] => LSMOD.IN1
+D[4] => LSMOD.IN1
+D[5] => LSMOD.IN1
+D[6] => LSMOD.IN1
+D[7] => LSMOD.IN1
+D[8] => LSMOD.IN1
+D[9] => LSMOD.IN1
+SERIAL <= mydff:DFF9.Q
+CLK => mydff:DFF0.CLK
+CLK => mydff:DFF1.CLK
+CLK => mydff:DFF2.CLK
+CLK => mydff:DFF3.CLK
+CLK => mydff:DFF4.CLK
+CLK => mydff:DFF5.CLK
+CLK => mydff:DFF6.CLK
+CLK => mydff:DFF7.CLK
+CLK => mydff:DFF8.CLK
+CLK => mydff:DFF9.CLK
+PRESET => mydff:DFF0.PRESET
+PRESET => mydff:DFF1.PRESET
+PRESET => mydff:DFF2.PRESET
+PRESET => mydff:DFF3.PRESET
+PRESET => mydff:DFF4.PRESET
+PRESET => mydff:DFF5.PRESET
+PRESET => mydff:DFF6.PRESET
+PRESET => mydff:DFF7.PRESET
+PRESET => mydff:DFF8.PRESET
+PRESET => mydff:DFF9.PRESET
+RESET => mydff:DFF0.RESET
+RESET => mydff:DFF1.RESET
+RESET => mydff:DFF2.RESET
+RESET => mydff:DFF3.RESET
+RESET => mydff:DFF4.RESET
+RESET => mydff:DFF5.RESET
+RESET => mydff:DFF6.RESET
+RESET => mydff:DFF7.RESET
+RESET => mydff:DFF8.RESET
+RESET => mydff:DFF9.RESET
+
+
+|Lab6|SequenceDetector:inst|PISO10BITS:PISO|myDFF:DFF0
+D => TQ.DATAIN
+CLK => TQ.CLK
+PRESET => TQ.IN0
+PRESET => TQ.PRESET
+RESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|SequenceDetector:inst|PISO10BITS:PISO|myDFF:DFF1
+D => TQ.DATAIN
+CLK => TQ.CLK
+PRESET => TQ.IN0
+PRESET => TQ.PRESET
+RESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|SequenceDetector:inst|PISO10BITS:PISO|myDFF:DFF2
+D => TQ.DATAIN
+CLK => TQ.CLK
+PRESET => TQ.IN0
+PRESET => TQ.PRESET
+RESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|SequenceDetector:inst|PISO10BITS:PISO|myDFF:DFF3
+D => TQ.DATAIN
+CLK => TQ.CLK
+PRESET => TQ.IN0
+PRESET => TQ.PRESET
+RESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|SequenceDetector:inst|PISO10BITS:PISO|myDFF:DFF4
+D => TQ.DATAIN
+CLK => TQ.CLK
+PRESET => TQ.IN0
+PRESET => TQ.PRESET
+RESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|SequenceDetector:inst|PISO10BITS:PISO|myDFF:DFF5
+D => TQ.DATAIN
+CLK => TQ.CLK
+PRESET => TQ.IN0
+PRESET => TQ.PRESET
+RESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|SequenceDetector:inst|PISO10BITS:PISO|myDFF:DFF6
+D => TQ.DATAIN
+CLK => TQ.CLK
+PRESET => TQ.IN0
+PRESET => TQ.PRESET
+RESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|SequenceDetector:inst|PISO10BITS:PISO|myDFF:DFF7
+D => TQ.DATAIN
+CLK => TQ.CLK
+PRESET => TQ.IN0
+PRESET => TQ.PRESET
+RESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|SequenceDetector:inst|PISO10BITS:PISO|myDFF:DFF8
+D => TQ.DATAIN
+CLK => TQ.CLK
+PRESET => TQ.IN0
+PRESET => TQ.PRESET
+RESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|SequenceDetector:inst|PISO10BITS:PISO|myDFF:DFF9
+D => TQ.DATAIN
+CLK => TQ.CLK
+PRESET => TQ.IN0
+PRESET => TQ.PRESET
+RESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|Timing_Reference:inst2
+clk => tmp.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+clk_2Hz <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+

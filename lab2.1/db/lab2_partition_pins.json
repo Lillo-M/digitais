@@ -1,0 +1,125 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "aLCC",
+					"strict" : false
+				},
+				{
+					"name" : "bLCC",
+					"strict" : false
+				},
+				{
+					"name" : "cLCC",
+					"strict" : false
+				},
+				{
+					"name" : "dLCC",
+					"strict" : false
+				},
+				{
+					"name" : "eLCC",
+					"strict" : false
+				},
+				{
+					"name" : "fLCC",
+					"strict" : false
+				},
+				{
+					"name" : "gLCC",
+					"strict" : false
+				},
+				{
+					"name" : "aMCC",
+					"strict" : false
+				},
+				{
+					"name" : "bMCC",
+					"strict" : false
+				},
+				{
+					"name" : "cMCC",
+					"strict" : false
+				},
+				{
+					"name" : "dMCC",
+					"strict" : false
+				},
+				{
+					"name" : "eMCC",
+					"strict" : false
+				},
+				{
+					"name" : "fMCC",
+					"strict" : false
+				},
+				{
+					"name" : "gMCC",
+					"strict" : false
+				},
+				{
+					"name" : "aLDC",
+					"strict" : false
+				},
+				{
+					"name" : "bLDC",
+					"strict" : false
+				},
+				{
+					"name" : "cLDC",
+					"strict" : false
+				},
+				{
+					"name" : "dLDC",
+					"strict" : false
+				},
+				{
+					"name" : "eLDC",
+					"strict" : false
+				},
+				{
+					"name" : "fLDC",
+					"strict" : false
+				},
+				{
+					"name" : "gLDC",
+					"strict" : false
+				},
+				{
+					"name" : "aMDC",
+					"strict" : false
+				},
+				{
+					"name" : "bMDC",
+					"strict" : false
+				},
+				{
+					"name" : "cMDC",
+					"strict" : false
+				},
+				{
+					"name" : "dMDC",
+					"strict" : false
+				},
+				{
+					"name" : "eMDC",
+					"strict" : false
+				},
+				{
+					"name" : "fMDC",
+					"strict" : false
+				},
+				{
+					"name" : "gMDC",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

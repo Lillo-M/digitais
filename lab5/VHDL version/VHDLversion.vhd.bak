@@ -1,0 +1,131 @@
+-- state diagram or state table
+-- if ZERO s7>s6>s5>s4>s3>s2>s1>s0>s7>...
+-- if ONE  s0>s1>s2>s3>s4>s5>s6>s7>s0>...
+
+
+
+
+
+-- entrada current_state future_state
+-- 0		s0				s7
+-- 0		s1				s0
+-- 0		s2				s1
+-- 0 		s3				s2
+-- 0 		s4				s3
+-- 0 		s5				s4
+-- 0 		s6				s5
+-- 0 		s7				s6
+
+-- 1		s0				s1
+-- 1		s1				s2
+-- 1		s2				s3
+-- 1 		s3				s4
+-- 1 		s4				s5
+-- 1 		s5				s6
+-- 1 		s6				s7
+-- 1 		s7				s0
+-- OR
+
+
+Library ieee; 
+use ieee.std_logic_1164.all; 
+--use ieee.std_logic_arith.all; 
+--use ieee.std_logic_signed.all; 
+
+
+ENTITY RABruno IS
+   PORT(
+      clk      : IN   STD_LOGIC;
+      reset_n    : IN   STD_LOGIC;
+      saida   : OUT  STD_LOGIC_VECTOR(2 downto 0));
+END RABruno;
+
+
+ARCHITECTURE funcionamento OF RABruno IS
+   TYPE STATE_TYPE IS (s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, sa, sb, sc, sd, se, sf);
+   SIGNAL estado   : STATE_TYPE;
+   
+BEGIN
+   PROCESS (clk, reset)
+   BEGIN
+      IF reset_n = '0' THEN
+         estado <= s1;
+      ELSIF (clk'EVENT AND clk = '0') THEN -- falling edge
+         CASE estado IS
+            WHEN s0=>
+               estado <= s2;
+            WHEN s1=>
+               estado <= s3;
+            WHEN s2=>
+               estado <= s5;
+			WHEN s3=>
+               estado <= s0;
+			WHEN s4=>
+               estado <= s6;
+            WHEN s5=>
+               estado <= s9;
+           WHEN s6=>
+               estado <= s8;
+			WHEN s7=>
+               estado <= s4;
+            WHEN s8=>
+               estado <= sa;
+            WHEN s9=>
+               estado <= s7;
+            WHEN sa=>
+               estado <= sc;
+			WHEN sb=>
+               estado <= sd;
+			WHEN sc=>
+               estado <= se;
+            WHEN sd=>
+               estado <= sf;
+           WHEN se=>
+               estado <= sb;
+			WHEN sf=>
+               estado <= s1;
+         END CASE;
+      END IF;
+   END PROCESS;
+   
+   PROCESS (estado)
+   BEGIN
+      CASE estado IS
+         WHEN s0 =>
+            saida <= "0000";
+         WHEN s1 =>
+            saida <= "0001";
+         WHEN s2 =>
+            saida <= "0010";
+		 WHEN s3 =>
+            saida <= "0011";	
+		 WHEN s4 =>
+            saida <= "0100";
+         WHEN s5 =>
+            saida <= "0101";
+         WHEN s6 =>
+            saida <= "0110";
+		 WHEN s7 =>
+            saida <= "0111";
+        WHEN s8 =>
+            saida <= "1000";
+         WHEN s9 =>
+            saida <= "1001";
+         WHEN sa =>
+            saida <= "1010";
+		 WHEN sb =>
+            saida <= "1011";	
+		 WHEN sc =>
+            saida <= "1100";
+         WHEN sd =>
+            saida <= "1101";
+         WHEN se =>
+            saida <= "1110";
+		 WHEN sf =>
+            saida <= "1111";
+			
+			
+      END CASE;
+   END PROCESS;
+   
+END funcionamento;

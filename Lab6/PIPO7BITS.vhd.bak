@@ -1,0 +1,79 @@
+Library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity PIPO7BITS is
+	port(
+		D         	   : IN  STD_LOGIC_VECTOR (6 DOWNTO 0);
+		Q              : OUT STD_LOGIC_vECTOR (6 DOWNTO 0);
+		CLK            : IN  STD_LOGIC; 
+		PRESET, RESET  : IN  STD_LOGIC
+	);
+end PIPO7BITS;
+
+architecture Behavior of PIPO7BITS is
+	begin
+	
+	DFF0 : work.myDFF(Behavior)
+	port map(
+		D => D(0),
+		CLK => CLK,
+		PRESET => PRESET,
+		RESET => RESET,
+		Q => Q(0)
+	);
+	
+	DFF1 : work.myDFF(Behavior)
+	port map(
+		D => D(1),
+		CLK => CLK,
+		PRESET => PRESET,
+		RESET => RESET,
+		Q => Q(1)
+	);
+	
+	DFF2 : work.myDFF(Behavior)
+	port map(
+		D => D(2),
+		CLK => CLK,
+		PRESET => PRESET,
+		RESET => RESET,
+		Q => Q(2)
+	);
+	
+	DFF3 : work.myDFF(Behavior)
+	port map(
+		D => D(3),
+		CLK => CLK,
+		PRESET => PRESET,
+		RESET => RESET,
+		Q => Q(3)
+	);
+	
+	DFF4 : work.myDFF(Behavior)
+	port map(
+		D => D(4),
+		CLK => CLK,
+		PRESET => PRESET,
+		RESET => RESET,
+		Q => Q(4)
+	);
+	
+	DFF5 : work.myDFF(Behavior)
+	port map(
+		D => D(5),
+		CLK => CLK,
+		PRESET => PRESET,
+		RESET => RESET,
+		Q => Q(5)
+	);
+	
+	DFF6 : work.myDFF(Behavior)
+	port map(
+		D => D(6),
+		CLK => CLK,
+		PRESET => PRESET,
+		RESET => RESET,
+		Q => Q(6)
+	);
+	
+end Behavior;

@@ -1,0 +1,11 @@
+v 4
+file . "Sync_Counter.vhd" "3d09e45fa9dfd574abe603fa8881c311f49ad072" "20240514013858.384":
+  entity synchronouscounter at 1( 0) + 0 on 95;
+  architecture behavior of synchronouscounter at 13( 200) + 0 on 96;
+  architecture behavior5 of synchronouscounter at 72( 1413) + 0 on 97;
+file . "myJKFF.vhd" "1879751c871ae9f634c80e5651097097f2ce0610" "20240514013858.379":
+  entity myjkff at 1( 0) + 0 on 93;
+  architecture behavior of myjkff at 13( 228) + 0 on 94;
+file . "Cronometro.vhd" "ad8345ceaa57ef80fadb72135b30f1d4f7be90ac" "20240514013858.390":
+  entity cronus at 1( 0) + 0 on 98;
+  architecture behavior of cronus at 12( 213) + 0 on 99;

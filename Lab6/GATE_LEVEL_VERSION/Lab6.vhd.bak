@@ -1,0 +1,78 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+entity Lab6 is
+	port(
+		CLK, PB0, PB1		: in std_logic;
+		SW   		: in  std_logic_vector (9 downto 0);
+		HEX0		: out std_logic_vector (6 downto 0)
+	);
+
+end Lab6;
+
+
+architecture Behavioral of Lab6 is
+		signal wire : std_logic_vector (3 downto 0);
+		signal node : std_logic_vector (3 downto 0);
+		signal iterator : std_logic;
+		signal load : std_logic := '1';
+		signal internal_clk : std_logic;
+		
+	begin
+	
+		internal_clk <= PB0;
+		
+		SM : work.StateMachine(GATE_LEVEL)
+		port map(
+			D (3 downto 0) => wire (3 downto 0),
+			X (3 downto 0) => node (3 downto 0),
+			I => iterator
+			
+		);
+		
+		DFF0 : work.myDFF(Behavior)
+		port map(
+			D => wire(0),
+			CLK => internal_clk,
+			Q => node(0),
+			RESET => PB1
+		);
+		
+		DFF1 : work.myDFF(Behavior)
+		port map(
+			D => wire(1),
+			CLK => internal_clk,
+			Q => node(1),
+			RESET => PB1
+		);
+		
+		DFF2 : work.myDFF(Behavior)
+		port map(
+			D => wire(2),
+			CLK => internal_clk,
+			Q => node(2),
+			RESET => PB1
+		);
+		
+		PISO : work.PISO10BITS(Behavior)
+		port map (
+			RESET => PB1,
+			D (9 downto 0) => SW (9 downto 0),
+			LS => load,
+			SERIAL => iterator,
+			CLK => internal_clk
+		);
+		
+		process(PB0)
+			
+			
+			begin
+				
+				if(PB0'event and PB0 = '0')then
+					load <= not load;
+				end if;
+				
+				
+		end process;
+		
+end Behavioral;

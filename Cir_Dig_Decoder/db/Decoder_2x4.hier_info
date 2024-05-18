@@ -1,0 +1,24 @@
+|Decoder
+B[0] <= decoder2to4:1.b[0]
+B[1] <= decoder2to4:1.b[1]
+B[2] <= decoder2to4:1.b[2]
+B[3] <= decoder2to4:1.b[3]
+A[0] => decoder2to4:1.a[0]
+A[1] => decoder2to4:1.a[1]
+
+
+|Decoder|decoder2to4:1
+a[0] => b.IN0
+a[0] => b.IN0
+a[0] => b.IN0
+a[0] => b.IN0
+a[1] => b.IN1
+a[1] => b.IN1
+a[1] => b.IN1
+a[1] => b.IN1
+b[0] <= b.DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= b.DB_MAX_OUTPUT_PORT_TYPE
+b[3] <= b.DB_MAX_OUTPUT_PORT_TYPE
+
+

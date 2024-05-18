@@ -1,0 +1,34 @@
+Library IEEE;
+use ieee.std_logic_1164.all;
+
+entity myJKFF is
+	port(
+		J, CLK, K, RESET, PRESET : in std_logic;
+		Q, QBAR : out std_logic;
+		
+	);
+end myJKFF;
+
+architecture Behavior of myJKFF is
+signal TQ : std_logic;
+	begin
+		process(CLK, RESET, PRESET)
+			begin
+				if(RESET = '0')then
+					TQ <= '0';
+				elsif(PRESET = '0')then
+					TQ <= '1';
+				elsif(CLK'event and CLK = '1')then
+					if (J = '1' and K = '1')then
+						TQ <= not TQ;
+					elsif (J = '0' and K = '1')then
+						TQ <= '0';
+					elsif (J = '1' and K = '0')then
+						TQ <= '1';
+					else
+						TQ <= TQ;
+					end if;
+				end if;
+		end process;
+
+end Behavior;

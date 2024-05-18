@@ -1,0 +1,51 @@
+Library IEEE;
+use ieee.std_logic_1164.all;
+
+entity SynchronousCounter is
+	port(
+		CLOCK, RESET : IN STD_LOGIC;
+		Q			  : OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
+		
+	);
+end SynchronousCounter;
+
+
+architecture Behavior of SynchronousCounter is
+signal wire : std_logic_vector (6 downto 0);
+		 
+		 JKFF0 : work.myJKFF(Behavior);
+		 port map(
+			J => wire(0),
+			K => wire(0),
+			CLK => CLOCK,
+			Q => wire(1)
+		 );
+		 
+		 JKFF1 : work.myJKFF(Behavior);
+		 port map(
+			J => wire(1),
+			K => wire(1),
+			CLK => CLOCK,
+			Q => wire(2)
+		 );
+		 
+		 JKFF2 : work.myJKFF(Behavior);
+		 port map(
+			J => wire(3),
+			K => wire(3),
+			CLK => CLOCK,
+			Q => wire(4)
+		 );
+		 
+		 JKFF3 : work.myJKFF(Behavior);
+		 port map(
+			J => wire(5),
+			K => wire(5),
+			CLK => CLOCK,
+			Q => wire(6)
+		 );
+	begin
+	
+	
+	
+end Behavior;

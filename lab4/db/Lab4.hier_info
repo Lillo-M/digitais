@@ -1,0 +1,618 @@
+|Lab4
+HEX0[0] <= Cronus:inst.HEX0[0]
+HEX0[1] <= Cronus:inst.HEX0[1]
+HEX0[2] <= Cronus:inst.HEX0[2]
+HEX0[3] <= Cronus:inst.HEX0[3]
+HEX0[4] <= Cronus:inst.HEX0[4]
+HEX0[5] <= Cronus:inst.HEX0[5]
+HEX0[6] <= Cronus:inst.HEX0[6]
+CLK => Cronus:inst.clk
+PB0 => Cronus:inst.PB0
+PB1 => Cronus:inst.PB1
+SW0 => Cronus:inst.SW0
+SW1 => Cronus:inst.SW1
+HEX1[0] <= Cronus:inst.HEX1[0]
+HEX1[1] <= Cronus:inst.HEX1[1]
+HEX1[2] <= Cronus:inst.HEX1[2]
+HEX1[3] <= Cronus:inst.HEX1[3]
+HEX1[4] <= Cronus:inst.HEX1[4]
+HEX1[5] <= Cronus:inst.HEX1[5]
+HEX1[6] <= Cronus:inst.HEX1[6]
+HEX2[0] <= Cronus:inst.HEX2[0]
+HEX2[1] <= Cronus:inst.HEX2[1]
+HEX2[2] <= Cronus:inst.HEX2[2]
+HEX2[3] <= Cronus:inst.HEX2[3]
+HEX2[4] <= Cronus:inst.HEX2[4]
+HEX2[5] <= Cronus:inst.HEX2[5]
+HEX2[6] <= Cronus:inst.HEX2[6]
+HEX3[0] <= Cronus:inst.HEX3[0]
+HEX3[1] <= Cronus:inst.HEX3[1]
+HEX3[2] <= Cronus:inst.HEX3[2]
+HEX3[3] <= Cronus:inst.HEX3[3]
+HEX3[4] <= Cronus:inst.HEX3[4]
+HEX3[5] <= Cronus:inst.HEX3[5]
+HEX3[6] <= Cronus:inst.HEX3[6]
+HEX4[0] <= Cronus:inst.HEX4[0]
+HEX4[1] <= Cronus:inst.HEX4[1]
+HEX4[2] <= Cronus:inst.HEX4[2]
+HEX4[3] <= Cronus:inst.HEX4[3]
+HEX4[4] <= Cronus:inst.HEX4[4]
+HEX4[5] <= Cronus:inst.HEX4[5]
+HEX4[6] <= Cronus:inst.HEX4[6]
+HEX5[0] <= Cronus:inst.HEX5[0]
+HEX5[1] <= Cronus:inst.HEX5[1]
+HEX5[2] <= Cronus:inst.HEX5[2]
+HEX5[3] <= Cronus:inst.HEX5[3]
+HEX5[4] <= Cronus:inst.HEX5[4]
+HEX5[5] <= Cronus:inst.HEX5[5]
+HEX5[6] <= Cronus:inst.HEX5[6]
+
+
+|Lab4|Cronus:inst
+clk => tmp.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+PB0 => process_1.IN1
+PB0 => myjkff:JKFF.CLK
+PB1 => comb.IN0
+PB1 => synchronouscounter:SCMS0.RESET
+PB1 => synchronouscounter:SCMS1.RESET
+PB1 => synchronouscounter:SCMS2.RESET
+PB1 => synchronouscounter:SCS0.RESET
+PB1 => synchronouscounter:SCS1.RESET
+PB1 => synchronouscounter:SCM.RESET
+SW0 => tmp.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW0 => count.OUTPUTSELECT
+SW1 => process_1.IN1
+HEX0[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[0] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[1] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[2] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[4] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[5] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[6] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[0] <= Mux20.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[1] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[2] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[3] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[4] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[5] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[6] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[0] <= Mux27.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[1] <= Mux26.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[2] <= Mux25.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[3] <= Mux24.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[4] <= Mux23.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[5] <= Mux22.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[6] <= Mux21.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[0] <= Mux34.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[1] <= Mux33.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[2] <= Mux32.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[3] <= Mux31.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[4] <= Mux30.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[5] <= Mux29.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[6] <= Mux28.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[0] <= Mux41.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[1] <= Mux40.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[2] <= Mux39.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[3] <= Mux38.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[4] <= Mux37.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[5] <= Mux36.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[6] <= Mux35.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|myJKFF:JKFF
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS0
+CLOCK => myjkff:JKFF0.CLK
+CLOCK => myjkff:JKFF1.CLK
+CLOCK => myjkff:JKFF2.CLK
+CLOCK => myjkff:JKFF3.CLK
+RESET => treset.DATAA
+Q[0] <= myjkff:JKFF0.Q
+Q[1] <= myjkff:JKFF1.Q
+Q[2] <= myjkff:JKFF2.Q
+Q[3] <= myjkff:JKFF3.Q
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS0|myJKFF:JKFF0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS0|myJKFF:JKFF1
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS0|myJKFF:JKFF2
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS0|myJKFF:JKFF3
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS1
+CLOCK => myjkff:JKFF0.CLK
+CLOCK => myjkff:JKFF1.CLK
+CLOCK => myjkff:JKFF2.CLK
+CLOCK => myjkff:JKFF3.CLK
+RESET => treset.DATAA
+Q[0] <= myjkff:JKFF0.Q
+Q[1] <= myjkff:JKFF1.Q
+Q[2] <= myjkff:JKFF2.Q
+Q[3] <= myjkff:JKFF3.Q
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS1|myJKFF:JKFF0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS1|myJKFF:JKFF1
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS1|myJKFF:JKFF2
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS1|myJKFF:JKFF3
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS2
+CLOCK => myjkff:JKFF0.CLK
+CLOCK => myjkff:JKFF1.CLK
+CLOCK => myjkff:JKFF2.CLK
+CLOCK => myjkff:JKFF3.CLK
+RESET => treset.DATAA
+Q[0] <= myjkff:JKFF0.Q
+Q[1] <= myjkff:JKFF1.Q
+Q[2] <= myjkff:JKFF2.Q
+Q[3] <= myjkff:JKFF3.Q
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS2|myJKFF:JKFF0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS2|myJKFF:JKFF1
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS2|myJKFF:JKFF2
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCMS2|myJKFF:JKFF3
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCS0
+CLOCK => myjkff:JKFF0.CLK
+CLOCK => myjkff:JKFF1.CLK
+CLOCK => myjkff:JKFF2.CLK
+CLOCK => myjkff:JKFF3.CLK
+RESET => treset.DATAA
+Q[0] <= myjkff:JKFF0.Q
+Q[1] <= myjkff:JKFF1.Q
+Q[2] <= myjkff:JKFF2.Q
+Q[3] <= myjkff:JKFF3.Q
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCS0|myJKFF:JKFF0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCS0|myJKFF:JKFF1
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCS0|myJKFF:JKFF2
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCS0|myJKFF:JKFF3
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCS1
+CLOCK => myjkff:JKFF0.CLK
+CLOCK => myjkff:JKFF1.CLK
+CLOCK => myjkff:JKFF2.CLK
+CLOCK => myjkff:JKFF3.CLK
+RESET => treset.DATAA
+Q[0] <= myjkff:JKFF0.Q
+Q[1] <= myjkff:JKFF1.Q
+Q[2] <= myjkff:JKFF2.Q
+Q[3] <= myjkff:JKFF3.Q
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCS1|myJKFF:JKFF0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCS1|myJKFF:JKFF1
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCS1|myJKFF:JKFF2
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCS1|myJKFF:JKFF3
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCM
+CLOCK => myjkff:JKFF0.CLK
+CLOCK => myjkff:JKFF1.CLK
+CLOCK => myjkff:JKFF2.CLK
+CLOCK => myjkff:JKFF3.CLK
+RESET => treset.DATAA
+Q[0] <= myjkff:JKFF0.Q
+Q[1] <= myjkff:JKFF1.Q
+Q[2] <= myjkff:JKFF2.Q
+Q[3] <= myjkff:JKFF3.Q
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCM|myJKFF:JKFF0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCM|myJKFF:JKFF1
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCM|myJKFF:JKFF2
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Cronus:inst|SynchronousCounter:SCM|myJKFF:JKFF3
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+CLK => TQ.CLK
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => TQ.IN0
+RESET => TQ.ACLR
+PRESET => TQ.IN1
+Q <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+QBAR <= TQ.DB_MAX_OUTPUT_PORT_TYPE
+
+

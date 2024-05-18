@@ -1,0 +1,8 @@
+v 4
+file . "Sync_Counter.vhd" "3d09e45fa9dfd574abe603fa8881c311f49ad072" "20240514013202.982":
+  entity synchronouscounter at 1( 0) + 0 on 13;
+  architecture behavior of synchronouscounter at 13( 200) + 0 on 14;
+  architecture behavior5 of synchronouscounter at 72( 1413) + 0 on 15;
+file . "myJKFF.vhd" "1879751c871ae9f634c80e5651097097f2ce0610" "20240514013159.172":
+  entity myjkff at 1( 0) + 0 on 11;
+  architecture behavior of myjkff at 13( 228) + 0 on 12;

@@ -1,0 +1,544 @@
+|lab3
+HEX0a <= seteSeg:inst15.a
+SW0 => PIPO4Bits:inst11.D0
+SW0 => PISO8Bits:inst1.D0
+SW1 => PIPO4Bits:inst11.D1
+SW1 => PISO8Bits:inst1.D1
+SW2 => PIPO4Bits:inst11.D2
+SW2 => PISO8Bits:inst1.D2
+SW3 => PIPO4Bits:inst11.D3
+SW3 => PISO8Bits:inst1.D3
+PB1 => inst34.IN0
+HEX0b <= seteSeg:inst15.b
+HEX0c <= seteSeg:inst15.c
+HEX0d <= seteSeg:inst15.d
+HEX0e <= seteSeg:inst15.e
+HEX0f <= seteSeg:inst15.f
+HEX0g <= seteSeg:inst15.g
+HEX1a <= seteSeg:inst16.a
+SW4 => PIPO4Bits:inst10.D0
+SW4 => PISO8Bits:inst1.D4
+SW5 => PIPO4Bits:inst10.D1
+SW5 => PISO8Bits:inst1.D5
+SW6 => PIPO4Bits:inst10.D2
+SW6 => PISO8Bits:inst1.D6
+SW7 => PIPO4Bits:inst10.D3
+SW7 => PISO8Bits:inst1.D7
+HEX1b <= seteSeg:inst16.b
+HEX1c <= seteSeg:inst16.c
+HEX1d <= seteSeg:inst16.d
+HEX1e <= seteSeg:inst16.e
+HEX1f <= seteSeg:inst16.f
+HEX1g <= seteSeg:inst16.g
+HEX4a <= seteSeg:inst13.a
+PB0 => inst35.IN0
+PB0 => inst4.IN0
+HEX4b <= seteSeg:inst13.b
+HEX4c <= seteSeg:inst13.c
+HEX4d <= seteSeg:inst13.d
+HEX4e <= seteSeg:inst13.e
+HEX4f <= seteSeg:inst13.f
+HEX4g <= seteSeg:inst13.g
+HEX5a <= seteSeg:inst14.a
+HEX5b <= seteSeg:inst14.b
+HEX5c <= seteSeg:inst14.c
+HEX5d <= seteSeg:inst14.d
+HEX5e <= seteSeg:inst14.e
+HEX5f <= seteSeg:inst14.f
+HEX5g <= seteSeg:inst14.g
+LED0 <= OL0.DB_MAX_OUTPUT_PORT_TYPE
+LED1 <= OL1.DB_MAX_OUTPUT_PORT_TYPE
+LED2 <= OL2.DB_MAX_OUTPUT_PORT_TYPE
+LED3 <= OL3.DB_MAX_OUTPUT_PORT_TYPE
+LED4 <= OM0.DB_MAX_OUTPUT_PORT_TYPE
+LED5 <= OM1.DB_MAX_OUTPUT_PORT_TYPE
+LED6 <= OM2.DB_MAX_OUTPUT_PORT_TYPE
+LED7 <= OM3.DB_MAX_OUTPUT_PORT_TYPE
+LED8 <= Timing_Reference:inst2.clk_2Hz
+
+
+|lab3|seteSeg:inst15
+M => a.IN0
+M => a.IN0
+M => b.IN0
+M => c.IN0
+M => d.IN0
+M => e.IN0
+M => e.IN0
+M => g.IN1
+M => a.IN1
+M => a.IN0
+M => b.IN0
+M => b.IN1
+M => c.IN0
+M => c.IN0
+M => f.IN0
+N => a.IN0
+N => a.IN0
+N => c.IN1
+N => e.IN1
+N => f.IN1
+N => f.IN0
+N => a.IN1
+N => b.IN1
+N => b.IN0
+N => g.IN0
+N => g.IN0
+O => a.IN1
+O => a.IN1
+O => b.IN0
+O => b.IN1
+O => d.IN1
+O => d.IN1
+O => e.IN0
+O => e.IN1
+O => g.IN1
+O => a.IN1
+O => c.IN0
+O => c.IN1
+O => f.IN0
+O => f.IN1
+P => a.IN1
+P => b.IN1
+P => b.IN1
+P => c.IN1
+P => c.IN1
+P => d.IN1
+P => g.IN1
+P => a.IN1
+P => b.IN1
+P => d.IN1
+P => e.IN1
+P => f.IN1
+P => f.IN1
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+e <= e.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3|PIPO4Bits:inst11
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLEAR => inst.ACLR
+CLEAR => inst1.ACLR
+CLEAR => inst2.ACLR
+CLEAR => inst3.ACLR
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+D0 => inst.DATAIN
+PRESET => inst.PRESET
+PRESET => inst1.PRESET
+PRESET => inst2.PRESET
+PRESET => inst3.PRESET
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.DATAIN
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst2.DATAIN
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst3.DATAIN
+
+
+|lab3|Timing_Reference:inst2
+clk => tmp.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+clk_2Hz <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3|seteSeg:inst16
+M => a.IN0
+M => a.IN0
+M => b.IN0
+M => c.IN0
+M => d.IN0
+M => e.IN0
+M => e.IN0
+M => g.IN1
+M => a.IN1
+M => a.IN0
+M => b.IN0
+M => b.IN1
+M => c.IN0
+M => c.IN0
+M => f.IN0
+N => a.IN0
+N => a.IN0
+N => c.IN1
+N => e.IN1
+N => f.IN1
+N => f.IN0
+N => a.IN1
+N => b.IN1
+N => b.IN0
+N => g.IN0
+N => g.IN0
+O => a.IN1
+O => a.IN1
+O => b.IN0
+O => b.IN1
+O => d.IN1
+O => d.IN1
+O => e.IN0
+O => e.IN1
+O => g.IN1
+O => a.IN1
+O => c.IN0
+O => c.IN1
+O => f.IN0
+O => f.IN1
+P => a.IN1
+P => b.IN1
+P => b.IN1
+P => c.IN1
+P => c.IN1
+P => d.IN1
+P => g.IN1
+P => a.IN1
+P => b.IN1
+P => d.IN1
+P => e.IN1
+P => f.IN1
+P => f.IN1
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+e <= e.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3|PIPO4Bits:inst10
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLEAR => inst.ACLR
+CLEAR => inst1.ACLR
+CLEAR => inst2.ACLR
+CLEAR => inst3.ACLR
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+D0 => inst.DATAIN
+PRESET => inst.PRESET
+PRESET => inst1.PRESET
+PRESET => inst2.PRESET
+PRESET => inst3.PRESET
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.DATAIN
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst2.DATAIN
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst3.DATAIN
+
+
+|lab3|seteSeg:inst13
+M => a.IN0
+M => a.IN0
+M => b.IN0
+M => c.IN0
+M => d.IN0
+M => e.IN0
+M => e.IN0
+M => g.IN1
+M => a.IN1
+M => a.IN0
+M => b.IN0
+M => b.IN1
+M => c.IN0
+M => c.IN0
+M => f.IN0
+N => a.IN0
+N => a.IN0
+N => c.IN1
+N => e.IN1
+N => f.IN1
+N => f.IN0
+N => a.IN1
+N => b.IN1
+N => b.IN0
+N => g.IN0
+N => g.IN0
+O => a.IN1
+O => a.IN1
+O => b.IN0
+O => b.IN1
+O => d.IN1
+O => d.IN1
+O => e.IN0
+O => e.IN1
+O => g.IN1
+O => a.IN1
+O => c.IN0
+O => c.IN1
+O => f.IN0
+O => f.IN1
+P => a.IN1
+P => b.IN1
+P => b.IN1
+P => c.IN1
+P => c.IN1
+P => d.IN1
+P => g.IN1
+P => a.IN1
+P => b.IN1
+P => d.IN1
+P => e.IN1
+P => f.IN1
+P => f.IN1
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+e <= e.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3|SIPO8Bits:inst
+Q0 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+OE => inst11.IN0
+OE => inst12.IN0
+OE => inst13.IN0
+OE => inst14.IN0
+OE => inst15.IN0
+OE => inst16.IN0
+OE => inst17.IN0
+OE => inst18.IN0
+CLK => inst30.CLK
+CLK => inst32.CLK
+CLK => inst5.CLK
+CLK => inst6.CLK
+CLK => inst7.CLK
+CLK => inst8.CLK
+CLK => inst9.CLK
+CLK => inst10.CLK
+SERIAL => inst30.DATAIN
+Q1 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+CLEAR => inst32.ACLR
+CLEAR => inst5.ACLR
+CLEAR => inst6.ACLR
+CLEAR => inst7.ACLR
+CLEAR => inst8.ACLR
+CLEAR => inst9.ACLR
+CLEAR => inst10.ACLR
+PRESET => inst32.PRESET
+PRESET => inst5.PRESET
+PRESET => inst6.PRESET
+PRESET => inst7.PRESET
+PRESET => inst8.PRESET
+PRESET => inst9.PRESET
+PRESET => inst10.PRESET
+Q2 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q4 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q5 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q6 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q7 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3|PISO8Bits:inst1
+O <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+CLEAR => inst7.ACLR
+CLEAR => inst6.ACLR
+CLEAR => inst5.ACLR
+CLEAR => inst4.ACLR
+CLEAR => inst3.ACLR
+CLEAR => inst2.ACLR
+CLEAR => inst1.ACLR
+CLEAR => inst.ACLR
+CLK => inst7.CLK
+CLK => inst6.CLK
+CLK => inst5.CLK
+CLK => inst4.CLK
+CLK => inst3.CLK
+CLK => inst2.CLK
+CLK => inst1.CLK
+CLK => inst.CLK
+D7 => LOAD_SHIFT:inst14.D
+L/S => LOAD_SHIFT:inst14.L
+L/S => LOAD_SHIFT:inst13.L
+L/S => LOAD_SHIFT:inst12.L
+L/S => LOAD_SHIFT:inst11.L
+L/S => LOAD_SHIFT:inst10.L
+L/S => LOAD_SHIFT:inst9.L
+L/S => LOAD_SHIFT:inst8.L
+L/S => LOAD_SHIFT:inst15.L
+D6 => LOAD_SHIFT:inst13.D
+D5 => LOAD_SHIFT:inst12.D
+D4 => LOAD_SHIFT:inst11.D
+D3 => LOAD_SHIFT:inst10.D
+D2 => LOAD_SHIFT:inst9.D
+D1 => LOAD_SHIFT:inst8.D
+D0 => LOAD_SHIFT:inst15.D
+PRESET => inst.PRESET
+PRESET => inst1.PRESET
+PRESET => inst2.PRESET
+PRESET => inst3.PRESET
+PRESET => inst4.PRESET
+PRESET => inst5.PRESET
+PRESET => inst6.PRESET
+PRESET => inst7.PRESET
+
+
+|lab3|PISO8Bits:inst1|LOAD_SHIFT:inst14
+O <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+L => inst3.IN0
+L => inst.IN1
+S => inst1.IN1
+D => inst.IN0
+
+
+|lab3|PISO8Bits:inst1|LOAD_SHIFT:inst13
+O <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+L => inst3.IN0
+L => inst.IN1
+S => inst1.IN1
+D => inst.IN0
+
+
+|lab3|PISO8Bits:inst1|LOAD_SHIFT:inst12
+O <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+L => inst3.IN0
+L => inst.IN1
+S => inst1.IN1
+D => inst.IN0
+
+
+|lab3|PISO8Bits:inst1|LOAD_SHIFT:inst11
+O <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+L => inst3.IN0
+L => inst.IN1
+S => inst1.IN1
+D => inst.IN0
+
+
+|lab3|PISO8Bits:inst1|LOAD_SHIFT:inst10
+O <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+L => inst3.IN0
+L => inst.IN1
+S => inst1.IN1
+D => inst.IN0
+
+
+|lab3|PISO8Bits:inst1|LOAD_SHIFT:inst9
+O <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+L => inst3.IN0
+L => inst.IN1
+S => inst1.IN1
+D => inst.IN0
+
+
+|lab3|PISO8Bits:inst1|LOAD_SHIFT:inst8
+O <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+L => inst3.IN0
+L => inst.IN1
+S => inst1.IN1
+D => inst.IN0
+
+
+|lab3|PISO8Bits:inst1|LOAD_SHIFT:inst15
+O <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+L => inst3.IN0
+L => inst.IN1
+S => inst1.IN1
+D => inst.IN0
+
+
+|lab3|seteSeg:inst14
+M => a.IN0
+M => a.IN0
+M => b.IN0
+M => c.IN0
+M => d.IN0
+M => e.IN0
+M => e.IN0
+M => g.IN1
+M => a.IN1
+M => a.IN0
+M => b.IN0
+M => b.IN1
+M => c.IN0
+M => c.IN0
+M => f.IN0
+N => a.IN0
+N => a.IN0
+N => c.IN1
+N => e.IN1
+N => f.IN1
+N => f.IN0
+N => a.IN1
+N => b.IN1
+N => b.IN0
+N => g.IN0
+N => g.IN0
+O => a.IN1
+O => a.IN1
+O => b.IN0
+O => b.IN1
+O => d.IN1
+O => d.IN1
+O => e.IN0
+O => e.IN1
+O => g.IN1
+O => a.IN1
+O => c.IN0
+O => c.IN1
+O => f.IN0
+O => f.IN1
+P => a.IN1
+P => b.IN1
+P => b.IN1
+P => c.IN1
+P => c.IN1
+P => d.IN1
+P => g.IN1
+P => a.IN1
+P => b.IN1
+P => d.IN1
+P => e.IN1
+P => f.IN1
+P => f.IN1
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+e <= e.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+

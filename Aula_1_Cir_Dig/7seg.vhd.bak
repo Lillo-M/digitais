@@ -1,0 +1,26 @@
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+Use IEEE.numeric_std.all;
+
+-- Declaração da entidade
+entity seteSeg is
+    Port (
+        M, N, O, P: in std_logic;
+        a, b, c, d, e, f, g: out std_logic
+    );
+end seteSeg;
+
+-- Arquitetura do componente
+architecture Behavioral of seteSegmentos is
+begin
+    -- Processo que realiza a adição
+    process(P, O, N, M)
+	 
+	 a <= ((not m and not ( n xor p ) ) or ( m and not n and not o) or (not m and o) or (n and o) or (m and not p));
+	 b <= ((not m and not n) or (not m and not (o xor p)) or (p and (m xor o)) or (not n not p));
+	 c <= ((m xor n) or (not o and p) or (not m and (not o or p)));
+	 d <=
+    begin
+        
+    end process;
+end Behavioral;
